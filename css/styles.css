@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 2% 1% 5% 1%;
+    text-align: center;
+    margin: 10px;
+    width: 25%;
+}
+
+.product img {
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+    background-color: white;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+aside {
+    padding: 20px;
+    width: 15%;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    margin: 5px 0;
+}
+
+#product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+#search button {
+    height: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-input {
+    width: 60%;
+    height: 50%;
+    padding: 0px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-right: 2%;
+}
+
+/* Media Queries */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header h1 {
+        display: none;
+    }
+    main {
+        padding: 0%;
+    }
+    #products {
+        padding: 0%;
+        margin: 0%;
+    }
+    aside {
+        display: none;
+    }
+    #product-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0%;
+    }
+    .product {
+        display: flex;
+        width: 100%;
+        background-color: red;
+        padding: 5%;
+    }
+    .product img {
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+        background-color: white;
+    }
+    .product h2{
+        font-size: 1rem;
+    }
+    .product_description {
+        display: none;
+    }
+    .product_lower_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 15px;
+    }
+    .product {
+        width: 33.33%;
+    }
+    aside {
+        width: 25%;
+    }
+}
+
+/* PC Styles (Default Styles) */
+@media (min-width: 1025px) {
+    /* Keep the default styles as defined earlier */
+}

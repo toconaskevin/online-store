@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Online Store</title>
+  </head>
+  <body>
+    <div class="super_container">
+      <header>
+        <h1>KAT</h1>
+        <section id="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Que estas buscando?"
+          />
+          <button onclick="searchProducts()">Buscar</button>
+        </section>
+        <section id="cart-section">
+          <h2>Shopping Cart</h2>
+          <!-- <ul id="cart">
+        </ul> -->
+          <p>Total: <span id="total">$0.00</span></p>
+          <button onclick="checkout()">Checkout</button>
+        </section>
+      </header>
+      <main>
+        <div id="products">
+          <aside>
+            <section id="categories">
+              <h2>Categories</h2>
+              <ul>
+                <li>
+                  <a href="#" onclick="showProducts('all')">All Products</a>
+                </li>
+                <li>
+                  <a href="#" onclick="showProducts('category1')">Category 1</a>
+                </li>
+                <li>
+                  <a href="#" onclick="showProducts('category2')">Category 2</a>
+                </li>
+              </ul>
+            </section>
+          </aside>
+          <section id="product-list">
+            <!-- Product listings will be displayed here using JavaScript -->
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="catalog.js"></script>
+</html>
